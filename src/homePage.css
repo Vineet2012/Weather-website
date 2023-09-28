@@ -1,0 +1,107 @@
+.search-box-weather-wrapper {
+  position: relative;
+  color: white;
+  /* font-family: sans-serif; */
+  letter-spacing: 1px;
+  min-height: 100vh;
+}
+
+.search-box-weather-wrapper .weather-wrapper {
+  display: flex;
+}
+
+ .search-box-weather-wrapper .search-unit-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.search-box-weather-wrapper  .temp-info-wrapper {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box-weather-wrapper .weather-main-info {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  margin-top: 8%;
+  border-radius: 8px;
+  padding: 8px;
+  backdrop-filter: blur(16px);
+  margin-right: 24px;
+}
+
+.search-box-weather-wrapper .weather-main-info .info-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  font-weight: 100;
+
+}
+
+.alert {
+  background-color: #DC143C;
+  text-align: center;
+  margin: 40px;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.search-box-weather-wrapper .search-unit-wrapper .input-field {
+  border-radius: 8px 0px 0px 8px;
+  border: none;
+  padding: 8px;
+  width: 20%;
+  height: 4vh;
+}
+
+.search-box-weather-wrapper .search-unit-wrapper .search-button {
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.search-box-weather-wrapper .search-unit-wrapper .select {
+  margin-left: 24px;
+  border-radius: 8px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-box-weather-wrapper .temp-info-wrapper .celcius-text {
+  font-size: 56px;
+  font-weight: 700;
+  margin-top: 8%;
+}
+
+.search-box-weather-wrapper .temp-info-wrapper .place-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .search-box-weather-wrapper .weather-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px 24px 16px;
+  }
+
+  .search-box-weather-wrapper .weather-main-info {
+    flex-direction: column;
+    width: 96%;
+  }
+  
+  .search-box-weather-wrapper .search-unit-wrapper .input-field {
+    width: 40%;
+    height: 4vh;
+  }
+} 
