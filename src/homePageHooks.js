@@ -8,7 +8,7 @@ export const HomePageHooks = () => {
 
   const [search, setSearch] = useState("Delhi");
   const [weather, setWeather] = useState(null);
-  const [value, setValue] = useState("Celcius");
+  const [value, setValue] = useState("℃");
   const [bkgImage, setBkgImage] = useState(images[4]);
   const [errorOccured, setErrorOccured] = useState(false);
   const [temp, setTemp] = useState();
@@ -52,9 +52,9 @@ export const HomePageHooks = () => {
   const tempUnitOnChange = (event) => {
     setValue(event.target.value)
     // change the units of temp in if condition
-    if (value === "Ferhenit") {
+    if (value === "°F") {
       setTemp((weather.main.temp - 273).toFixed(2) + "℃");
-    } else if (value === "Celcius") {
+    } else if (value === "℃") {
       setTemp(((weather.main.temp - 273.15) * 9 / 5 + 32).toFixed(2) + "°F");
     }
   }

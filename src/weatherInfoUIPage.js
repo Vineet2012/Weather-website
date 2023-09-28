@@ -7,7 +7,6 @@ export default function WeatherInfoUIPageCmp(props) {
 
   return (
     <div>
-
       {props.weather ?
         <div className='weather-wrapper'>
           <div className='temp-info-wrapper' >

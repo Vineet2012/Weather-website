@@ -15,9 +15,9 @@ export default function HomePage() {
             <input className='input-field' type='text' placeholder='Search...' onChange={(e) => setSearch(e.target.value)} value={search}></input>
             <button className='search-button' onClick={searchOnClick}>Search</button>
             <select onChange={tempUnitOnChange}
-              defaultValue="Celcius" className='select'>
-              <option value="Ferhenit">Ferhenit</option>
-              <option value="Celcius">Celcius</option>
+              defaultValue="℃" className='select'>
+              <option value="°F">°F</option>
+              <option value="℃">℃</option>
             </select>
           </div>
           {errorOccured ?
